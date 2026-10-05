@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,td {border: 3px solid blue;border-collapse: collapse;} 
+        table,td,th {border: 3px solid black;border-collapse: collapse;} 
+        th {background-color:blue; color: white ;}
     </style>
 </head>
 <body>
@@ -26,6 +27,67 @@
         <td>López</td>          
         <td>20</td> 
     </tr>
+
+     <td>Antonio</td>
+        <td>Fernandez</td>
+        <td>61</td>
     </table>
+
+    <table>
+        <h1>Caption y Colspan</h1>
+        <caption>Teléfonos</caption>
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Teléfonos</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>465365760</td>
+            <td>222333444</td>
+        </tr>
+        <tr>
+            <td>Pepe Pérez</td>
+            <td>676876876</td>
+            <td>456378827</td>
+        </tr>
+    </table>
+    <h1>RowSpan</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td>Juan</td>
+        </tr>
+        <tr>
+                <th rowspan="2">Teléfonos</th>
+                <td>333444211</td>
+        </tr>
+        <tr>
+            <td>345627890</td>
+        </tr>
+    </table>
+
+<h1>Prpiedades por columnas</h1>
+    <table>
+        <caption>Listado de Libros</caption>
+        <col style="background-color: crimson;">
+        <col style="background-color: aqua;">
+        <col style="background-color: blueviolet;">
+        <tr>
+            <th>ISBN</th>
+            <th>Título</th>
+            <th>Precio</th>
+    </tr>
+    <tr>
+        <td>347</td>
+        <td>Empezando con HTML</td>
+        <td>53€</td>
+    </tr>
+    <tr>
+        <td>4323</td>
+        <td>Intro a CSS</td>
+        <td>43€</td>
+     </tr>
+    </table>
+        
 </body>
 </html>
